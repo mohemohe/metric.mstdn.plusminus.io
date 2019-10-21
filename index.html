@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>metric.mstdn.plusminus.io</title>
+  </head>
+  <body>
+    <script>
+      const option = {
+        metrics: {
+          manager1: [
+            'https://mackerel.io/embed/public/embed/FzkPRAL9ze04ee2bS9QVz6Gv71f8FBFiU0loCnJ6sgf6CjNw0B1ElacC8IFIZk6r',
+            'https://mackerel.io/embed/public/embed/pThlkEuPeOKJei5wzfXmsP0L5wjtNOdtbwbubUyQzN5vuRgw0p5s6hfMA2EWuBSu',
+            'https://mackerel.io/embed/public/embed/U6FA2hExabwY85VDhSIbOJodiNLqU2wd1ccyf3tkSgouMeYZBDWO2Gf0Wq568td5',
+            'https://mackerel.io/embed/public/embed/buGlLNJa2fobCq8X6p1XEbLRhut6rf6qNm9mVDBvWoWT8ShCcONN7zmFxGXOejAL',
+            'https://mackerel.io/embed/public/embed/oVSYPWjvYWOewG5bXXDXj6uy330QbR0RXKGwCeIgybW2QI9PN1rtKXR7ev4YnDzU',
+            'https://mackerel.io/embed/public/embed/GZf15Iu9BLqE6ivTtI4AxEtgMGK7ejfIvsHUtVuNEjxPyQZC7m3IoRqVgrdhdDLi',
+          ],
+          worker1: [
+            'https://mackerel.io/embed/public/embed/PIBUjvtU3pDhskEHJPehsKe5pjFQjXsfDw3Bz0FSvlvUtjoBEbCrF51qrwHsjxTP',
+            'https://mackerel.io/embed/public/embed/FcxRDCfmT5bAA3bbuKcoR36PgmxsTa18XMcd06eDcVq2nBl5SaejjUSdluPSqG6d',
+            'https://mackerel.io/embed/public/embed/7LPMkMLLfpRepDtfHqXcgEGHlix5UBosG5qs0D9ONSFcBl76kckmKezMD6PCx8yP',
+            'https://mackerel.io/embed/public/embed/h74qbScnyPdDSzD9lRipOhE8VBCjeQAITt2Mg7lhOAyPjQY7AK0Q3gaXeh6SxclJ',
+            'https://mackerel.io/embed/public/embed/NhcY6IdbuUQB7iAvyl37AsKJzOVlejd6OnKRh3hIbYdsmwE9czg2NHJ6WWEQilzp',
+            'https://mackerel.io/embed/public/embed/ka3Gbq6RAI0zPYi2BvDuVidDy4IpSvq91oLsam84l3Q2R68dqZIo9J73q4ihs3K3',
+          ],
+          worker2: [
+            'https://mackerel.io/embed/public/embed/h7m1u28zIKi8uvpQQYUQrCwAFf2sQ8EE0LEnrbrCTjtqGBbbqRFhqJw8ilSKbFUG',
+            'https://mackerel.io/embed/public/embed/TgA0scU3uwVhJAP4bGfSss1uzQJiDdc1j5RD3N6JUDfG1ujOVNi1zYwSjlAnq0BW',
+            'https://mackerel.io/embed/public/embed/XYJKgAP2B4nC0HUL2tbSRncsTdzI3fhuXPZvkWJXsMp5Y2Hk1GiKlKFNyur8tfLd',
+            'https://mackerel.io/embed/public/embed/r8jTkVuszN3Qh7p71SZgfDNQSE4WhXDUc7bEEKAeqojiHW7PVmLLTwHbIABnki62',
+            'https://mackerel.io/embed/public/embed/r8jTkVuszN3Qh7p71SZgfDNQSE4WhXDUc7bEEKAeqojiHW7PVmLLTwHbIABnki62',
+            'https://mackerel.io/embed/public/embed/sJ98zFugy5wGN7Nns0mUZAJMGIutVLwOvUxqmg4BmzUWCU2LusAg1apWvgGAR9KW',
+          ],
+          worker3: [
+            'https://mackerel.io/embed/public/embed/19Nxk1pYIY4Ffdi51MU5p3EQmdSlhSc2Q62v9VwVxdupqIr6uDE4UOBrkL2XfBz3',
+            'https://mackerel.io/embed/public/embed/RH78a3bci91lJ3OUPaavnvIfpVkiiwFiGvof2Y0vo0eaLMKCxf7jS9fiigfHoybs',
+            'https://mackerel.io/embed/public/embed/iC1ys1MbWJW1BS03GPLJe5af7HX0HtKKQZKqqXpWhQyPIwP8gxHl8KTmILiFTvIu',
+            'https://mackerel.io/embed/public/embed/cRluWPqADUTgGyguPHMYSRLZDIII44SKGtNjWjdAfq1mc6bcs9t4OnnfS3c84TKv',
+            'https://mackerel.io/embed/public/embed/tcbVUBv816mYeKEmLKX1iR1YhZpj4Ioo2VOeod8hBPJVNtpsSWHXqOp2oB3rLKyc',
+            'https://mackerel.io/embed/public/embed/uvcbKxwjiNShncLv7XeVzBCL6Crlk6fQWlgdkR4JPaysXdlJ7ao2jEPdbXm3BQbn',
+          ],
+        },
+        period: "6h",
+      };
+      import('https://cdn.statically.io/gh/mohemohe/mackerel-stats/master/mackerel.js').then(Mackerel => {
+        const mkr = new Mackerel.default(option);
+        mkr.render();
+      });
+    </script>
+  </body>
+</html>
